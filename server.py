@@ -12,7 +12,8 @@ app.secret_key = "ABC"
 @app.route('/')
 def index():
     """Homepage."""
-    return '<html><body>Hello</body></html>'
+
+    return render_template("homepage.html")
 
 
 # create a route for the incoming SMS to be received
@@ -20,7 +21,7 @@ def index():
 def sms_reply():
     resp = MessagingResponse()
 
-    resp.message("A honey pot full of happiness awaits the hard working bear.")
+    resp.message("A tasty treat awaits every patient dog.")
 
     return str(resp)
 
