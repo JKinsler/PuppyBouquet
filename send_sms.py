@@ -1,39 +1,49 @@
+"""Send messages to users"""
+
 import os
 from twilio.rest import Client
 import puppies as pups
+import messages as msg
+from datetime import datetime
 
-
-"""sample message
-# MUST SOURCE THE ENVIRONMENT VARIABLES BEFORE RUNNING THIS
-account_sid = os.environ["TWILIO_SID"]
-auth_token = os.environ["TWILIO_AUTH_TOKEN"]
-
-client = Client(account_sid, auth_token)
-client.messages.create(
-    to=os.environ["JK_PHONE_NUM"],
-    from_=os.environ["TWILIO_PHONE_NUM"], 
-    body="You are a magical unicorn on your first Twilio Rainbow journey."
-    )
-"""
-
-vid_img = pups.choose_image()
-
+# universal variables for send_sms.py file
 account_sid = os.environ["TWILIO_SID"]
 auth_token = os.environ["TWILIO_AUTH_TOKEN"]
 jk_num = os.environ["JK_PHONE_NUM"]
 client = Client(account_sid, auth_token)
 
+#choose a random
+vid_img = pups.choose_image()
+saying=msg.choose_msg()
 
-def send_sms(phone_num, msg=vid_img):
+
+def send_sms(phone_num):
     """Send an sms message to the phone number which is given as an input 
-    parameter"""
+    parameter
 
-    client.messages.create(
-    to=jk_num,
-    from_=os.environ["TWILIO_PHONE_NUM"], 
-    body=msg
+    MUST SOURCE THE ENVIRONMENT VARIABLES BEFORE RUNNING THIS CODE"""
+
+    message = client.messages.\
+    create(
+        to=jk_num,
+        from_=os.environ["TWILIO_PHONE_NUM"], 
+        body=msg.choose_msg(),
+        media_url=[pups.choose_image()]
     )
 
-    return "message sent to {phone_num}, {msg}".format(phone_num = phone_num,\
-                                                        msg = msg)
+    return message.sid
+
+# # schedule and sms
+# now = datetime.now()
+# print(now)
+# today = datetime.today()
+# print(today)
+
+# def schedule_sms():
+#     now = datetime.today()
+    
+
+# send_time = '2020-05-03 00:22:40.927728'
+
+
 

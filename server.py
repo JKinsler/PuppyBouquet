@@ -1,3 +1,6 @@
+"""Use server.py to build out features like user log-in page and return 
+messaging."""
+
 import os
 from flask import Flask, request, redirect
 from twilio.twiml.messaging_response import MessagingResponse
