@@ -24,10 +24,9 @@ puppies.add('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQkotfX7XDrI
 puppies.add('https://3.bp.blogspot.com/_juSx6zGROwg/Spx2MHlY-lI/AAAAAAAAAGE/T-bV4XcsehY/s400/naughty-puppy-dog-destroying-toilet-paper.jpg')
 puppies.add('https://secure.i.telegraph.co.uk/multimedia/archive/02893/puppy_2893720b.jpg')
 puppies.add('https://i.ytimg.com/vi/FeLV0vA7ZJA/hqdefault.jpg')
-puppies.add('')
-puppies.add('')
-puppies.add('')
-puppies.add('')
+puppies.add('https://lh3.googleusercontent.com/proxy/Gxmxb38EuaxXl8hnOdDEF3OuhS_HHZcmJmZB_QVlL2frrXZdnmHHQipI1QW5YR-RZMqXdJbJcCz8raQfWKo87c1kR3UtzZZkgNVnGT7R7mUfK8LeE8sUnQ2c8cDBzw')
+puppies.add('https://s.yimg.com/ny/api/res/1.2/H1RSdJ7sB2qg1PLLJ8k7bw--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NjMwO2g9MzUx/http://media.zenfs.com/en-AU/homerun/y7.yahoo7lifestyle/416da5740d6e3cf8e336f6c7d056cf23')
+puppies.add('https://s.yimg.com/ny/api/res/1.2/wn9tmioQ9CQ1Ds1IrLZVdQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTUyOC43NQ--/https://s.yimg.com/uu/api/res/1.2/vpsTkc_m7gf5Y4vV2Szn2A--~B/aD03MjA7dz05NjA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/coconuts_manila_225/f1775dcd580d44a0f54675b5a7c1b08b')
 
 
 if __name__ == '__main__':

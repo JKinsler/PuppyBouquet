@@ -4,7 +4,8 @@ import os
 from twilio.rest import Client
 import puppies as pups
 import messages as msg
-from datetime import datetime
+import schedule
+import time
 
 # universal variables for send_sms.py file
 account_sid = os.environ["TWILIO_SID"]
@@ -33,17 +34,34 @@ def send_sms(phone_num):
 
     return message.sid
 
-# # schedule and sms
-# now = datetime.now()
-# print(now)
-# today = datetime.today()
-# print(today)
 
-# def schedule_sms():
-#     now = datetime.today()
+'''Next up:
+    - write code to schedule when sms messages will send
+    - review python 'schedule' module instead of 'schedule_sms' code below.
+
+# import datetime
+# from datetime import timedelta
+
+def schedule_sms():
+    """schedule when an SMS will send"""
     
+    #current time in UTC 
+    now = datetime.datetime.now() # TO DO: update to be local time instead of UTC
+    print(now)
+    now_time = ('strip') #TO DO: strip the local time so it gives hours, minutes, seconds only
+    print(now_time)
 
-# send_time = '2020-05-03 00:22:40.927728'
+    # desired time to send the message
+    schedule = 'something' # TO do: select a time to send the message
+    print(schedule)
+
+    if now_time == sched_time:
+        send_sms(jk_num)
+        return 'message sent'
+'''
+
+
+if __name__ == '__main__':
 
 
 
