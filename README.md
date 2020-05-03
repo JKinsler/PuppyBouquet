@@ -64,7 +64,7 @@ $ source secrets.sh
 
 * Schedule messages so they send on a specific time when the bot is deployed
 * expand into a web app that allows users to create an account and select when they'd like to receive PuppyBouquet messages
-* Give users the option to upload of their dogs, to be shared.
+* Give users the option to upload and share images of their dogs.
  
 
 ## <a name="aboutme"></a>About the Developer
