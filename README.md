@@ -4,7 +4,7 @@ PuppyBouquet is a bot that send messages to users to spread some cheer. Messages
 
 The bot uses Twilio's SMS api to send texts. Message content is randomly generated from a set of curated phrases and images.
 
-###Contents
+### Contents
 * [Technologies](#techstack)
 * [Installation](#installation)
 * [Features](#features)
@@ -18,7 +18,7 @@ Tech Stack: Python3, Twilio SMS api
 ## <a name="installation"></a>Installation
 ### Prerequisites
 
-The following must be installed to run SolarViz:
+The following must be installed to run PuppyBoquet:
 
 - Python3
 
