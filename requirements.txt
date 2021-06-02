@@ -88,7 +88,7 @@ traitlets==4.3.3
 twilio==6.39.0
 Twisted==17.9.0
 ufw==0.36
-urllib3==1.25.9
+urllib3==1.26.5
 virtualenv==15.1.0
 wcwidth==0.1.8
 webencodings==0.5.1
